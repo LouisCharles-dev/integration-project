@@ -23,7 +23,22 @@ body {
 
 .footer-icons{
   display:flex;
+  width:100%;
+  flex-direction:row;
   height: 41.5px;
+  align-items: center;
+}
+
+.secure-icons{
+  display:flex;
+  justify-content: flex-end;
+  width:50%;
+}
+
+.social-icons{
+  display:flex;
+  justify-content:flex-start;
+  width:50%;
 }
 
 .chinese-banner{
@@ -35,6 +50,7 @@ body {
 }
 
 .full-hero{
+  display:flex;
   background-image: url("Pictures/China.jpg");
   background-size:cover;
   background-repeat:no-repeat;
