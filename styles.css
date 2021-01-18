@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: "HK Grotesk", "SF UI Text", sans-serif; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box-surprise{
+  background-color:#5BADFF;
+  height:155px;
+  width:100%;
+}
+
+.footer-nav{
+  display:flex;
+  align-items: center;
+  background-color:#5BADFF;
+  height:41.5px;
+}
+
+.footer-icons{
+  display:flex;
+  height: 41.5px;
+}
+
+.chinese-banner{
+  background-image: url("Pictures/bandeau chine.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:155px;
+  width:100%;
+}
+
+.full-hero{
+  background-image: url("Pictures/China.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:50vh;
+}
+
+.first-concept, .second-concept{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:746px;
+}
+
+.client-advice{
+  display:flex;
+  height:479px;
+}
