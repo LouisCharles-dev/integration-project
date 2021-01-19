@@ -12,7 +12,7 @@
     <header>
       <!--                                                             Burger menu -->
 
-      <nav>
+      <nav class="nav-left">
         <div class="mobile">
           <input type="checkbox" class="checkbox" />
           <div class="span-container">
@@ -30,23 +30,26 @@
             </ul>
           </div>
         </div>
+
+        <img src="Pictures/logo.svg" alt="logo du site" class="website-logo" />
+
+        <h1>La Box voyageuse</h1>
       </nav>
 
-      <img src="Pictures/logo.svg" alt="logo du site" />
-      <h1>La Box voyageuse</h1>
-
-      <nav>
-        <a><img src="Pictures/PANIER.svg" alt="icone panier" /></a>
-        <a><img src="Pictures/COMPTE.svg" alt="icone compte" /></a>
+      <nav class="nav-right">
+        <a><img src="Pictures/PANIER.svg" alt="icone panier" class="cart" /></a>
+        <a
+          ><img src="Pictures/COMPTE.svg" alt="icone compte" class="account"
+        /></a>
       </nav>
     </header>
 
     <main>
       <section class="full-hero">
-        <div>
-          <h>JANVIER 2021</h>
-          <h>SPECIALE CHINE</h>
-          <a>ACHETER</a>
+        <div class="last-box">
+          <h3>JANVIER 2021</h3>
+          <h4>SPECIALE CHINE</h4>
+          <a class="buy-button">ACHETER</a>
         </div>
       </section>
 
@@ -92,9 +95,11 @@
       <!--                                                             Bandeau box surprise -->
 
       <section class="box-surprise">
-        <p>DES BOX SURPRISES</p>
-        <p>DU MONDE ENTIER</p>
-        <a>S'ABONNER</a>
+        <div>
+          <h3>DES BOX SURPRISES</h3>
+          <h4>DU MONDE ENTIER</h4>
+        </div>
+        <a class="subscribe-button">S'ABONNER</a>
       </section>
 
       <!--                                                             Section Le concept suite -->
@@ -146,26 +151,36 @@
       <!--                                                             Bandeau box des derniers mois -->
 
       <section class="chinese-banner">
-        <p>JANVIER 2021</p>
-        <p>SPECIALE CHINE</p>
-        <a>S'ABONNER</a>
+        <div>
+          <h3>JANVIER 2021</h3>
+          <h4>SPECIALE CHINE</h4>
+        </div>
+        <a class="subscribe-button">S'ABONNER</a>
       </section>
 
       <!--                                                             Section avis clients -->
 
       <section class="client-advice">
-        <h2>Avis clients</h2>
-        <h>Moyenne des avis 4/5</h>
+        <h2 class="section-title">Avis clients</h2>
+        <h5 class="average">Moyenne des avis 4/5</h5>
 
-        <article>
-          <figure>
-            <img src="Pictures/avis-amandine.svg" alt="photo d'amandine" />
-            <figcaption>Amandine</figcaption>
-          </figure>
-
+        <article class="first-advice">
+          <div class="client-profil">
+            <img
+              src="Pictures/avis-amandine.svg"
+              alt="photo d'amandine"
+              class="client-pictures"
+            />
+            <h5>Amandine</h5>
+          </div>
+          <img
+            src="Pictures/star.svg"
+            alt="client notation"
+            class="star-notation"
+          />
           <time>5 Décembre 2020</time>
 
-          <p>
+          <p class="comment-advice">
             Je la trouve bien garnie, on peut faire plusieurs plats. Le seul
             petit reproche que je peux faire c’est qu’il n’y a pas de balance
             entre le salé et le sucré.
@@ -178,23 +193,43 @@
 
     <footer>
       <nav class="footer-nav">
-        <a>A PROPOS</a>
-        <a>SERVICE CLIENT</a>
-        <a>CATEGORIES</a>
-        <a>CONTACT</a>
+        <a href="#">A PROPOS</a>
+        <a href="#">SERVICE CLIENT</a>
+        <a href="#">CATEGORIES</a>
+        <a href="#">CONTACT</a>
       </nav>
 
       <div class="footer-icons">
         <div class="social-icons">
-          <img src="Pictures/instagram.svg" alt="logo d'instagram" />
-          <img src="Pictures/twitter-sign.svg" alt="logo twitter-sign" />
-          <img src="Pictures/facebook.svg" alt="logo facebook" />
+          <img
+            src="Pictures/instagram.svg"
+            alt="logo d'instagram"
+            class="social-logo"
+          />
+          <img
+            src="Pictures/twitter-sign.svg"
+            alt="logo twitter-sign"
+            class="social-logo"
+          />
+          <img
+            src="Pictures/facebook.svg"
+            alt="logo facebook"
+            class="social-logo"
+          />
         </div>
 
         <div class="secure-icons">
-          <img src="Pictures/insurance.svg" alt="logo assurance" />
-          <img src="Pictures/mastercard.svg" alt="logo mastercard" />
-          <img src="Pictures/visa.svg" alt="logo visa" />
+          <img
+            src="Pictures/insurance.svg"
+            alt="logo assurance"
+            class="secure-logo"
+          />
+          <img
+            src="Pictures/mastercard.svg"
+            alt="logo mastercard"
+            class="secure-logo"
+          />
+          <img src="Pictures/visa.svg" alt="logo visa" class="secure-logo" />
         </div>
       </div>
     </footer>
