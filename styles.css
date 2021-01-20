@@ -138,15 +138,16 @@ table {
   src: url("fonts/Cream\ Cake.woff2") format("woff2");
 }
 
-h3,
+.banner-title,
+.client-name,
 figcaption,
 a,
-h5 {
+.average {
   font-family: "Mollen-bold";
 }
 
 p,
-h4,
+.banner-text,
 time {
   font-family: "Mollen-Regular";
 }
@@ -277,21 +278,21 @@ label {
 
 /*                                                                 Website title */
 
-h1,
-h2 {
+.website-title,
+.section-title {
   font-family: "Cream-Cake", "SF UI Text", sans-serif;
 }
 
-h1,
-h3 {
+.website-title,
+.banner-title {
   font-size: 27px;
 }
 
-h2 {
+.section-title {
   font-size: 40px;
 }
 
-h4 {
+.banner-text {
   font-size: 15px;
 }
 
