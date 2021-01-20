@@ -293,6 +293,7 @@ header {
 
 .section-title {
   font-size: 40px;
+  margin-bottom: 100px;
 }
 
 .banner-text {
@@ -319,13 +320,6 @@ header {
   height: 80%;
 }
 
-.buy-button {
-  margin-top: 28px;
-  padding: 15px;
-  background-color: #fc8c1d;
-  font-size: 18px;
-}
-
 /*                                                                 Surpise box banner */
 
 .box-surprise {
@@ -338,8 +332,19 @@ header {
   padding: 54px 0px 54px 0px;
 }
 
-.subscribe-button {
-  padding: 15px;
+.right-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.subscribe-button,
+.buy-button,
+.advice-button {
+  width: 123px;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle;
   background-color: #fc8c1d;
   font-size: 18px;
 }
@@ -349,6 +354,10 @@ a {
   color: white;
 }
 
+.surprise-box {
+  display: none;
+  width: 300px;
+}
 /*                                                                 Concept section */
 
 .first-concept,
@@ -371,12 +380,18 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 57px;
 }
 
 figcaption {
-  margin-top: 21px;
+  margin: 21px 0 21px 0;
   text-align: center;
+  padding: 0 0px 0px 0px;
+}
+
+.concept-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 /*                                                                 Chinese banner */
 
@@ -389,10 +404,22 @@ figcaption {
   color: white;
   display: flex;
   align-items: center;
+}
+
+.chinese-content {
+  width: 100%;
+  display: flex;
   justify-content: space-evenly;
 }
 
 /*                                                                Client advice */
+
+.second-advice,
+.third-advice,
+.four-advice,
+.advice-button {
+  display: none;
+}
 
 .client-advice {
   display: flex;
@@ -451,6 +478,13 @@ figcaption {
 .client-name {
   order: 2;
 }
+
+.see-more {
+  display: none;
+  color: black;
+  text-decoration: underline;
+  justify-content: center;
+}
 /*                                                                 Footer */
 
 .footer-nav {
@@ -492,4 +526,91 @@ figcaption {
 .secure-logo {
   margin-right: 15px;
   width: 30px;
+}
+
+/* Responsive desktop layout */
+
+@media (min-width: 1200px) {
+  .full-hero {
+    height: 60vh;
+  }
+
+  .concept-content,
+  .second-concept {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .first-concept,
+  .second-concept {
+    padding: 114px;
+  }
+
+  figcaption {
+    padding: 0 40px 0 40px;
+  }
+
+  .box-surprise {
+    flex-direction: row;
+    padding: 60px 0 60px 0;
+  }
+
+  .surprise-box {
+    display: flex;
+  }
+
+  .right-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+  }
+
+  .subscribe-button {
+    margin: 0 100px 0 0;
+  }
+
+  .chinese-banner {
+    justify-content: flex-end;
+    padding: 110px 0 110px 0;
+  }
+
+  .chinese-content {
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 253px;
+  }
+
+  .banner-text {
+    margin-bottom: 35px;
+  }
+
+  .second-advice,
+  .first-advice,
+  .third-advice,
+  .four-advice {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 110px;
+    width: 50%;
+  }
+
+  .advice-button {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-right: 230px;
+  }
+  .comment-advice {
+    padding-right: 100px;
+  }
+  .groups-advice {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 115px 0 115px;
+  }
+
+  .see-more {
+    display: flex;
+  }
 }
