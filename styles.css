@@ -182,6 +182,7 @@ header {
 
 .cart,
 .account {
+  height: 21px;
   margin-right: 11px;
 }
 
@@ -200,6 +201,10 @@ header {
 .checkbox {
   opacity: 0;
   z-index: 100;
+}
+
+label {
+  display: none;
 }
 
 .span-container {
@@ -294,7 +299,7 @@ h4 {
 
 .full-hero {
   display: flex;
-  background-image: url("Pictures/China.jpg");
+  background-image: url("Pictures/webp/China.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -348,11 +353,16 @@ h4 {
 
 .concept-pictures {
   display: flex;
-  width: 100%;
   justify-content: center;
-  height: 94px;
+  object-fit: cover;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+}
 figcaption {
   margin-top: 21px;
   margin-left: 39px;
@@ -362,7 +372,7 @@ figcaption {
 /*                                                                 Chinese banner */
 
 .chinese-banner {
-  background-image: url("Pictures/bandeau chine.jpg");
+  background-image: url("Pictures/webp/chine-banner.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 155px;
@@ -455,14 +465,18 @@ time {
   justify-content: space-between;
 }
 
-.secure-icons {
+.secure-groups {
   display: flex;
   justify-content: flex-end;
+  height: 30px;
+  width: 150px;
 }
 
-.social-icons {
+.social-groups {
   display: flex;
   justify-content: flex-start;
+  height: 30px;
+  width: 150px;
 }
 
 .social-logo {
