@@ -125,17 +125,17 @@ table {
 
 @font-face {
   font-family: "Mollen-bold";
-  src: url("fonts/Mollen-Bold.woff2") format("woff2");
+  src: url("fonts/mollen-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Mollen-regular";
-  src: url("fonts/Mollen-Regular.woff2") format("woff2");
+  src: url("fonts/mollen-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Cream-cake";
-  src: url("fonts/Cream\ Cake.woff2") format("woff2");
+  src: url("fonts/cream-cake.woff") format("woff");
 }
 
 .banner-title,
@@ -319,7 +319,7 @@ header {
 .buy-button {
   margin-top: 28px;
   padding: 15px;
-  background-color: #ffad5b;
+  background-color: #fc8c1d;
   font-size: 18px;
 }
 
@@ -337,7 +337,7 @@ header {
 
 .subscribe-button {
   padding: 15px;
-  background-color: #ffad5b;
+  background-color: #fc8c1d;
   font-size: 18px;
 }
 

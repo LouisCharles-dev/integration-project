@@ -3,7 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <title>laboxvoyageuse</title>
-    <link rel="preload" href="styles.css" as="style" />
+    <link
+      rel="preload"
+      href="fonts/cream-cake.woff"
+      as="font"
+      type="font/woff"
+    />
+    <link
+      rel="preload"
+      href="fonts/mollen-regular.woff"
+      as="font"
+      type="font/woff"
+    />
+    <link
+      rel="preload"
+      href="fonts/mollen-bold.woff"
+      as="font"
+      type="font/woff"
+    />
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="Description" content="Integration project of UX UI wireframe" />
@@ -17,8 +34,12 @@
 
       <nav class="nav-left">
         <div class="mobile">
-          <input type="checkbox" class="checkbox" id="burger" />
-          <label class="label" for="burger"> burger menu</label>
+          <input
+            aria-label="menu principal"
+            type="checkbox"
+            class="checkbox"
+            id="burger"
+          />
           <div class="span-container">
             <span></span>
             <span></span>
@@ -55,8 +76,10 @@
       </nav>
 
       <nav class="nav-right">
-        <a><img src="Pictures/cart.svg" alt="icone panier" class="cart" /></a>
-        <a
+        <a href="https://laboxvoyageuse-louis.netlify.app/"
+          ><img src="Pictures/cart.svg" alt="icone panier" class="cart"
+        /></a>
+        <a href="https://laboxvoyageuse-louis.netlify.app/"
           ><img src="Pictures/account.svg" alt="icone compte" class="account"
         /></a>
       </nav>
