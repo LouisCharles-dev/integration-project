@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>laboxvoyageuse</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" as="style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Description" content="Integration project of UX UI wireframe" />
   </head>
 
   <body>
@@ -14,7 +17,9 @@
 
       <nav class="nav-left">
         <div class="mobile">
-          <input type="checkbox" class="checkbox" />
+          <label>
+            <input type="checkbox" class="checkbox" />
+          </label>
           <div class="span-container">
             <span></span>
             <span></span>
@@ -58,38 +63,32 @@
       <section class="first-concept">
         <h2>Le concept</h2>
 
-        <article>
-          <figure>
-            <img
-              src="Pictures/abonnement.svg"
-              alt="photo abonnement ordinateur"
-              class="concept-pictures"
-            />
-            <figcaption>CHOISISSEZ VOTRE ABONNEMENT</figcaption>
-          </figure>
-        </article>
+        <figure>
+          <img
+            src="Pictures/abonnement.svg"
+            alt="photo abonnement ordinateur"
+            class="concept-pictures"
+          />
+          <figcaption>CHOISISSEZ VOTRE ABONNEMENT</figcaption>
+        </figure>
 
-        <article>
-          <figure>
-            <img
-              src="Pictures/box.svg"
-              alt="photo d'une reception de box"
-              class="concept-pictures"
-            />
-            <figcaption>JE RECEPTIONNE MA BOX</figcaption>
-          </figure>
-        </article>
+        <figure>
+          <img
+            src="Pictures/box.svg"
+            alt="photo d'une reception de box"
+            class="concept-pictures"
+          />
+          <figcaption>JE RECEPTIONNE MA BOX</figcaption>
+        </figure>
 
-        <article>
-          <figure>
-            <img
-              src="Pictures/Deguste.svg"
-              alt="photo d'une personne qui mange"
-              class="concept-pictures"
-            />
-            <figcaption>JE DEGUSTE AVEC MES PROCHES !</figcaption>
-          </figure>
-        </article>
+        <figure>
+          <img
+            src="Pictures/Deguste.svg"
+            alt="photo d'une personne qui mange"
+            class="concept-pictures"
+          />
+          <figcaption>JE DEGUSTE AVEC MES PROCHES !</figcaption>
+        </figure>
       </section>
 
       <!--                                                             Bandeau box surprise -->
@@ -105,47 +104,41 @@
       <!--                                                             Section Le concept suite -->
 
       <section class="second-concept">
-        <article>
-          <figure>
-            <img
-              src="Pictures/chef.svg"
-              alt="chef entrain de cuisiner"
-              class="concept-pictures"
-            />
-            <figcaption>
-              Des produits choisis par un grand chef du pays du mois qui vous
-              livre ses secrets
-            </figcaption>
-          </figure>
-        </article>
+        <figure>
+          <img
+            src="Pictures/chef.svg"
+            alt="chef entrain de cuisiner"
+            class="concept-pictures"
+          />
+          <figcaption>
+            Des produits choisis par un grand chef du pays du mois qui vous
+            livre ses secrets
+          </figcaption>
+        </figure>
 
-        <article>
-          <figure>
-            <img
-              src="Pictures/ingredients.svg"
-              alt="phot d'ingrédients divers"
-              class="concept-pictures"
-            />
-            <figcaption>
-              5 à 7 ingrédients de qualité typiques du pays à l'honneur pour
-              préparer un repas pour 4 personnes
-            </figcaption>
-          </figure>
-        </article>
+        <figure>
+          <img
+            src="Pictures/ingredients.svg"
+            alt="phot d'ingrédients divers"
+            class="concept-pictures"
+          />
+          <figcaption>
+            5 à 7 ingrédients de qualité typiques du pays à l'honneur pour
+            préparer un repas pour 4 personnes
+          </figcaption>
+        </figure>
 
-        <article>
-          <figure>
-            <img
-              src="Pictures/livret.svg"
-              alt="livret de recette"
-              class="concept-pictures"
-            />
-            <figcaption>
-              Un livret de recettes authentiques et faciles à réaliser pour
-              cuisiner avec votre box !
-            </figcaption>
-          </figure>
-        </article>
+        <figure>
+          <img
+            src="Pictures/livret.svg"
+            alt="livret de recette"
+            class="concept-pictures"
+          />
+          <figcaption>
+            Un livret de recettes authentiques et faciles à réaliser pour
+            cuisiner avec votre box !
+          </figcaption>
+        </figure>
       </section>
 
       <!--                                                             Bandeau box des derniers mois -->
