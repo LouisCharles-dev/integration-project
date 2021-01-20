@@ -158,10 +158,10 @@ p {
 
 header {
   display: flex;
-  height: 35px;
   font-size: 15px;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0 10px 0;
 }
 
 .nav-right {
@@ -175,14 +175,14 @@ header {
 }
 
 .website-logo {
-  width: 23px;
+  width: 30px;
   margin-left: 50px;
   margin-right: 11px;
 }
 
 .cart,
 .account {
-  height: 21px;
+  height: 30px;
   margin-right: 11px;
 }
 
@@ -190,11 +190,11 @@ header {
 
 .span-container,
 .checkbox {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   left: 11px;
-  top: 18px;
+  top: 22px;
   transform: translateY(-50%);
 }
 
@@ -284,7 +284,7 @@ h2 {
 
 h1,
 h3 {
-  font-size: 25px;
+  font-size: 27px;
 }
 
 h2 {
@@ -326,12 +326,12 @@ h4 {
 
 .box-surprise {
   background-color: #5badff;
-  height: 155px;
   width: 100%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 54px 0px 54px 0px;
 }
 
 .subscribe-button {
@@ -348,25 +348,25 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 746px;
+  padding: 57px;
 }
 
 .concept-pictures {
   display: flex;
   justify-content: center;
   object-fit: cover;
+  margin-bottom: 19px;
 }
 
 figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  object-fit: cover;
+  margin-top: 57px;
 }
+
 figcaption {
   margin-top: 21px;
-  margin-left: 39px;
-  margin-right: 39px;
   text-align: center;
 }
 /*                                                                 Chinese banner */
@@ -375,7 +375,7 @@ figcaption {
   background-image: url("Pictures/webp/chine-banner.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 155px;
+  padding: 54px 0px 54px 0px;
   width: 100%;
   color: white;
   display: flex;
@@ -388,7 +388,7 @@ figcaption {
 .client-advice {
   display: flex;
   flex-direction: column;
-  height: 479px;
+  padding: 52px 0px 105px 0px;
   justify-content: space-evenly;
   margin-left: 39px;
   margin-right: 39px;
@@ -418,20 +418,20 @@ figcaption {
   margin-top: 10px;
 }
 
-time {
-  margin-bottom: 24px;
-  margin-top: 13px;
-}
-
 .average {
   display: flex;
   justify-content: flex-start;
+  margin: 50px 0 43px 0;
 }
 
 .comment-advice,
-.star-notation,
 .time-notation {
   margin-left: 50px;
+}
+
+.time-notation,
+.star-notation {
+  margin: 0 0 22px 50px;
 }
 
 .coment-advice,
@@ -468,21 +468,19 @@ time {
 .secure-groups {
   display: flex;
   justify-content: flex-end;
-  height: 30px;
-  width: 150px;
 }
 
 .social-groups {
   display: flex;
   justify-content: flex-start;
-  height: 30px;
-  width: 150px;
 }
 
 .social-logo {
   margin-left: 7px;
+  width: 30px;
 }
 
 .secure-logo {
   margin-right: 15px;
+  width: 30px;
 }
