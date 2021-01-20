@@ -125,16 +125,19 @@ table {
 
 @font-face {
   font-family: "Mollen-bold";
+  font-display: swap;
   src: url("fonts/mollen-bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Mollen-regular";
+  font-display: swap;
   src: url("fonts/mollen-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Cream-cake";
+  font-display: swap;
   src: url("fonts/cream-cake.woff") format("woff");
 }
 
