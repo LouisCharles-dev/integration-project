@@ -173,7 +173,8 @@ li,
 p {
   font-size: 16px;
 }
-/*                                                                 Header */
+
+/*****************************************************************Header */
 
 header {
   display: flex;
@@ -214,9 +215,14 @@ header {
 }
 
 .website-logo {
+  display: none;
   width: 30px;
   margin-left: 50px;
   margin-right: 11px;
+}
+
+.website-title {
+  margin-left: 50px;
 }
 
 .logo-groups {
@@ -233,7 +239,7 @@ header {
 .label-search {
   font-size: 12px;
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 10px;
   pointer-events: none;
 }
@@ -265,7 +271,7 @@ header {
   display: none;
 }
 
-/*                                                                 Burger menu */
+/*****************************************************************Burger menu */
 
 .span-container,
 .checkbox {
@@ -320,12 +326,12 @@ header {
 
 .menu-mobile {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 30%;
   display: flex;
   z-index: 50;
-  padding-top: 30px;
-  background: #252945;
+  padding: 40px 0 0 10px;
+  background: #eeeeee;
   transition: all 250ms ease-out;
   transform: translateX(-100%);
   flex-direction: column;
@@ -335,18 +341,18 @@ header {
 .menu-mobile ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0;
+  align-items: flex-start;
+  padding: 0 0 0 10px;
 }
 
 .menu-mobile li {
   list-style: none;
-  padding: 10px;
+  padding: 20px;
 }
 
 .menu-mobile li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 .menu-mobile li a :hover {
@@ -354,7 +360,7 @@ header {
   transition: 0.3s;
 }
 
-/*                                                                 Website title */
+/*****************************************************************Website title */
 
 .website-title,
 .section-title {
@@ -373,9 +379,10 @@ header {
 
 .banner-text {
   font-size: 15px;
+  margin-bottom: 30px;
 }
 
-/*                                                                 Full hero */
+/*****************************************************************Full hero */
 
 .full-hero {
   display: flex;
@@ -395,7 +402,7 @@ header {
   height: 80%;
 }
 
-/*                                                                 Surpise box banner */
+/*****************************************************************Surpise box banner */
 
 .box-surprise {
   background-color: #5badff;
@@ -410,16 +417,18 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  padding: 0 10px 0 10px;
 }
 
 .subscribe-button,
 .buy-button,
 .advice-button,
 .subscribe-button-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 123px;
-  line-height: 48px;
-  text-align: center;
-  vertical-align: middle;
+  height: 48px;
   background-color: #f78c22;
   font-size: 18px;
 }
@@ -443,7 +452,8 @@ a {
   display: none;
   width: 300px;
 }
-/*                                                                 Concept section */
+
+/*****************************************************************Concept section */
 
 .first-concept {
   display: flex;
@@ -471,7 +481,12 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
+  max-width: 260px;
+  margin: 20px;
+}
+
+.first-concept figure {
+  max-width: 220px;
 }
 
 figcaption {
@@ -486,7 +501,8 @@ figcaption {
   justify-content: inherit;
   width: 100%;
 }
-/*                                                                 Chinese banner */
+
+/*****************************************************************Chinese banner */
 
 .chinese-banner {
   background-image: url("Pictures/webp/china-banner.webp");
@@ -505,19 +521,17 @@ figcaption {
   justify-content: space-evenly;
 }
 
-/*                                                                Client advice */
+/*****************************************************************Client advice */
 
 .groups-advice {
   font-family: sans-serif;
   scroll-snap-type: x mandatory;
   display: flex;
-  -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
 }
 
 .carousel-cell {
-  border-right: 1px solid white;
-  padding: 1rem;
+  padding: 16px 70px 16px 16px;
   min-width: 100vw;
   scroll-snap-align: start;
   position: relative;
@@ -532,8 +546,11 @@ figcaption {
   margin: 0 10px 0 10px;
 }
 
-.client-advice .advice-button {
-  margin-left: 10px;
+.advice-button {
+  display: none;
+  justify-content: center;
+  align-self: end;
+  margin-right: 56px;
 }
 
 .section-title {
@@ -595,6 +612,7 @@ figcaption {
 .number-advice {
   display: flex;
   font-size: 16px;
+  margin-left: 10px;
 }
 
 /*****************************************************************************Footer */
@@ -605,6 +623,7 @@ figcaption {
   background-color: #5badff;
   justify-content: space-around;
   font-size: 12px;
+  padding: 10px 0 10px 0;
 }
 
 .footer-nav a {
@@ -673,9 +692,21 @@ figcaption {
 /*****************************************************************Responsive tablet layout */
 
 @media (min-width: 750px) {
+  .website-logo {
+    display: inherit;
+  }
+
+  .website-title {
+    margin-left: 0;
+  }
+
   .full-hero {
     background-image: url("Pictures/webp/china-tablet.webp");
     height: 60vh;
+  }
+
+  .advice-button {
+    display: flex;
   }
 }
 
@@ -708,6 +739,7 @@ figcaption {
 
   .menu-mobile ul {
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     width: 100vw;
   }
@@ -757,7 +789,7 @@ figcaption {
 
   .full-hero {
     background-image: url("Pictures/webp/china-desktop.webp");
-    height: 60vh;
+    height: 80vh;
   }
 
   /***************************************************************Desktop concept section */
@@ -811,13 +843,6 @@ figcaption {
 
   /***************************************************************Desktop client advice */
 
-  .advice-button {
-    display: flex;
-    justify-content: center;
-    align-self: end;
-    margin-right: 50px;
-  }
-
   .client-advice {
     display: flex;
     flex-direction: column;
@@ -832,11 +857,13 @@ figcaption {
     scroll-snap-align: start;
     box-sizing: border-box;
     width: 50%;
+    min-height: 300px;
   }
 
   .number-advice {
     display: block;
     padding-left: 36px;
+    margin-left: 0;
   }
 
   .average {
