@@ -86,7 +86,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -100,17 +102,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -118,9 +124,14 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -368,7 +379,7 @@ header {
 
 .full-hero {
   display: flex;
-  background-image: url("Pictures/webp/China.webp");
+  background-image: url("Pictures/webp/china-mobile.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -389,7 +400,6 @@ header {
 .box-surprise {
   background-color: #5badff;
   width: 100%;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -435,8 +445,7 @@ a {
 }
 /*                                                                 Concept section */
 
-.first-concept
-/* .second-concept*/ {
+.first-concept {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,8 +593,8 @@ figcaption {
 }
 
 .number-advice {
-  display: none;
-  font-size: 22px;
+  display: flex;
+  font-size: 16px;
 }
 
 /*****************************************************************************Footer */
@@ -659,6 +668,15 @@ figcaption {
 
 .copyright {
   display: none;
+}
+
+/*****************************************************************Responsive tablet layout */
+
+@media (min-width: 750px) {
+  .full-hero {
+    background-image: url("Pictures/webp/china-tablet.webp");
+    height: 60vh;
+  }
 }
 
 /*****************************************************************Responsive desktop layout */
@@ -738,6 +756,7 @@ figcaption {
   /***************************************************************Desktop full hero */
 
   .full-hero {
+    background-image: url("Pictures/webp/china-desktop.webp");
     height: 60vh;
   }
 
