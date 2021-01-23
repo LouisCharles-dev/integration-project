@@ -394,7 +394,7 @@ header {
 
 .full-hero {
   display: flex;
-  background-image: url("Pictures/webp/china-mobile.webp");
+  background-image:  -webkit-image-set(url("Pictures/webp/china-mobile.webp"), url("Pictures/jpg/china-mobile-safari.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -565,7 +565,7 @@ figcaption {
 .advice-button {
   display: none;
   justify-content: center;
-  align-self: end;
+  align-self: flex-end;
   margin-right: 56px;
 }
 
