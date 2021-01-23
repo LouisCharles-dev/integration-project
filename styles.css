@@ -1,3 +1,5 @@
+/*****************************************************************Reset CSS */
+
 html,
 body,
 div,
@@ -87,7 +89,7 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
+/*****************************************************************HTML5 display-role reset for older browsers */
 
 article,
 aside,
@@ -230,10 +232,14 @@ header {
   font-size: 20px;
 }
 
-.cart,
-.account {
+.grow-fx {
+  transition: all 0.2s ease-in-out;
   height: 30px;
   padding-right: 12px;
+}
+
+.grow-fx:hover {
+  transform: scale(1.4);
 }
 
 .label-search {
@@ -243,8 +249,10 @@ header {
   left: 10px;
   pointer-events: none;
 }
+
 .search {
   position: relative;
+  display: none;
 }
 
 .search input {
@@ -265,10 +273,6 @@ header {
 
 .label-search {
   color: #959595;
-}
-
-.search {
-  display: none;
 }
 
 /*****************************************************************Burger menu */
@@ -326,7 +330,7 @@ header {
 
 .menu-mobile {
   position: fixed;
-  width: 30%;
+  width: 42%;
   height: 30%;
   display: flex;
   z-index: 50;
@@ -355,9 +359,11 @@ header {
   color: black;
 }
 
-.menu-mobile li a :hover {
-  color: #46ecae;
-  transition: 0.3s;
+/*****************************************************************Nav hover fx */
+
+.nav-fx:hover {
+  color: #f78c22;
+  transform: scale(1.2);
 }
 
 /*****************************************************************Website title */
@@ -375,6 +381,8 @@ header {
 .section-title {
   font-size: 40px;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .banner-text {
@@ -420,10 +428,14 @@ header {
   padding: 0 10px 0 10px;
 }
 
-.subscribe-button,
-.buy-button,
-.advice-button,
-.subscribe-button-nav {
+.box-pictures {
+  display: none;
+  width: 300px;
+}
+
+/*****************************************************************Buttons */
+
+.button-fx {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -431,6 +443,7 @@ header {
   height: 48px;
   background-color: #f78c22;
   font-size: 18px;
+  transition: all 0.5s;
 }
 
 .subscribe-button-nav {
@@ -448,9 +461,12 @@ a {
   color: black;
 }
 
-.surprise-box {
-  display: none;
-  width: 300px;
+/*****************************************************************Buttons hover fx */
+
+.button-fx:hover {
+  color: #f78c22;
+  background: black;
+  transform: scale(1.1);
 }
 
 /*****************************************************************Concept section */
@@ -553,11 +569,6 @@ figcaption {
   margin-right: 56px;
 }
 
-.section-title {
-  display: flex;
-  justify-content: center;
-}
-
 .client-profil {
   display: flex;
   align-items: center;
@@ -615,7 +626,7 @@ figcaption {
   margin-left: 10px;
 }
 
-/*****************************************************************************Footer */
+/*****************************************************************Footer */
 
 .footer-nav {
   display: flex;
@@ -657,7 +668,7 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 30px 20px 30px;
 }
 
 .secure-groups {
@@ -700,13 +711,13 @@ figcaption {
     margin-left: 0;
   }
 
+  .advice-button {
+    display: flex;
+  }
+
   .full-hero {
     background-image: url("Pictures/webp/china-tablet.webp");
     height: 60vh;
-  }
-
-  .advice-button {
-    display: flex;
   }
 }
 
@@ -809,7 +820,7 @@ figcaption {
     padding: 60px 0 60px 0;
   }
 
-  .surprise-box {
+  .box-pictures {
     display: flex;
   }
 
@@ -881,6 +892,7 @@ figcaption {
   .comment-advice {
     padding-right: 100px;
   }
+
   .groups-advice {
     display: flex;
     flex-wrap: wrap;
@@ -920,5 +932,14 @@ figcaption {
 
   .copyright {
     display: flex;
+  }
+}
+
+/*****************************************************************Responsive desktop + layout */
+
+@media (min-width: 1750px) {
+  .full-hero {
+    background-image: url("Pictures/webp/china-tablet.webp");
+    height: 100vh;
   }
 }
