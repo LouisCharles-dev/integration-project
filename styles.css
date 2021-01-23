@@ -330,8 +330,8 @@ header {
 
 .menu-mobile {
   position: fixed;
-  width: 42%;
-  height: 30%;
+  width: 170px;
+  height: 300px;
   display: flex;
   z-index: 50;
   padding: 40px 0 0 10px;
