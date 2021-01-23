@@ -394,8 +394,7 @@ header {
 
 .full-hero {
   display: flex;
-  background-image: url("Pictures/webp/china-mobile.webp"),
-    url("Pictures/jpg/china-mobile-safari.jpg");
+  background-image: url("Pictures/webp/china-mobile.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -616,9 +615,10 @@ figcaption {
 
 .see-more {
   display: none;
+  width: 100px;
   color: black;
   text-decoration: underline;
-  justify-content: center;
+  align-self: center;
 }
 
 .number-advice {
