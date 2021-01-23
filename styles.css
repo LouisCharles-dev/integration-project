@@ -394,7 +394,7 @@ header {
 
 .full-hero {
   display: flex;
-  background-image: (
+  background-image: image-set(
     url("Pictures/webp/china-mobile.webp"),
     url("Pictures/jpg/china-mobile-safari.jpg")
   );
